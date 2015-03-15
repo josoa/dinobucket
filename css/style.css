@@ -19,6 +19,10 @@
 	background: hsl(0, 0%, 90%);
 }
 
+[_col~="1/2"] {
+	width: calc(50% - 30px);
+}
+
 [_col~="2/3"] {
 	width: calc(66.6666666666% - 30px);
 	background: hsl(0, 0%, 80%);
@@ -33,6 +37,16 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 18px;
 }
+
+header {
+	margin-bottom: 25px;
+}
+
+nav {
+	width: 388px;
+	margin: 0 auto;
+}
+
 
 h1, h2, h3, p, a, ul, li {
 	padding: 0;
@@ -50,14 +64,9 @@ h1 em {
 	text-transform: uppercase;
 }
 
-nav {
-	width: 400px;
-	margin: 0 auto;
-}
-
 nav > ul > li {
 	float: left;
-	margin-right: 20px;
+	margin: 0 25px;
 }
 
 h2 {
@@ -73,11 +82,11 @@ h3 {
 p, li {
 	font-size: 1em; /*16px*/
 	line-height: 1.625em; /*26px*/
-	margin-bottom: .45em;
 }
 
 p {
 	text-align: justify;
+	margin-bottom: 1em;
 }
 
 p em {
@@ -96,5 +105,6 @@ a:hover {
 
 li {
 	list-style: none;
+	margin-bottom: .45em;
 }
 
