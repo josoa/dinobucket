@@ -171,8 +171,17 @@ a:link, a:visited {
 	margin: 0 5px 10px; 
 	float: left;
 	vertical-align: top;
-
+	/*position: relative;*/
 }
+
+/*[_img~="preview"] p {
+	opacity: 0;
+}
+
+[_img~="preview"]:hover p {
+	opacity: 1;
+}
+*/
 
 [_img~="full"] {
 	/*margin: 5% 0;*/
@@ -222,7 +231,7 @@ a:link, a:visited {
 
 
 
-/* ANIMATIONS 
+/* ANIMATIONS */
 
 @-webkit-keyframes rad {
 
