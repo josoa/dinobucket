@@ -158,6 +158,12 @@ a:link, a:visited {
 	color: hsl(0, 0%, 33%);
 }
 
+/* IMAGES */
+
+img {
+	max-width: 100%;
+}
+
 /* WORDS */
 
 .words {
