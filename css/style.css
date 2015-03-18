@@ -1,3 +1,6 @@
+body {
+	background-image: url('../svg/bg-01.svg');
+}
 .container {
 	max-width: 960px;
 	margin: 25px auto;
@@ -76,7 +79,6 @@ h1 {
 
 h1 em {
 	text-transform: uppercase;
-	-webkit-animation: rad 5s infinite ease-in; 
 }
 
 nav > ul > li {
@@ -145,19 +147,39 @@ label:hover, label:target {
 /* COLORS */
 
 body {
-	color: hsl(0, 0%, 23%);
+	color: hsl(0, 0%, 93%);
 }
 
-a:link, a:visited {
-	color: hsl(0, 0%, 55%);
+a:link, a:visited, [_nav~="about"] label {
+	color: #E54661;
+}
+
+.words label {
+	color: #4A9685;
 }
 
 [_nav~="top"] > ul > li a {
-	color: hsl(0, 0%, 13%);
+	color: hsl(0, 0%, 93%);
 }
 
-[_nav~="sub"] > ul > li a {
-	color: hsl(0, 0%, 33%);
+h1 em {
+	-webkit-animation: rad 15s infinite ease-in; 
+}
+
+h2 {
+	color: #4B97FF;
+}
+
+[_img~="preview"] > h2 {
+	color: hsl(0, 0%, 23%);
+}
+
+h3 {
+	color: #64C188;
+}
+
+li em {
+	color: #FFA644;
 }
 
 /* IMAGES */
@@ -182,22 +204,26 @@ a:link, a:visited {
 [_img~="preview"]:hover p {
 	opacity: 1;
 }
-*/
 
-[_img~="full"] {
-	/*margin: 5% 0;*/
+
+/*[_img~="full"] {
+	margin: 5% 0;
 
 }
 
 [_img~="profile"] {
 
-}
+}*/
 
 [_img~="rotate"] {
 	-webkit-transform: rotate(90deg);
 	-ms-transform: rotate(90deg);
 	-o-transform: rotate(90deg);
 	transform: rotate(90deg);
+}
+
+[src$=svg] {
+	width: 80%;
 }
 
 /* LIGHTBOX */
@@ -236,12 +262,19 @@ a:link, a:visited {
 
 @-webkit-keyframes rad {
 
-  0% { color: #FF375A; }
-  20% { color: #FFD43C; }
-  40% { color: #64C188; }
-  60% { color: #2C594F; }
-  80% { color: #4B97FF; }
-  100% { color: #002D40; }
+  0% { color: #FFA644; }
+  10% { color: #FFA644; }
+  20% { color: #64C188; }
+  30% { color: #4A9685; }
+  40% { color: #4B97FF; }
+  50% { color: #002D40; }
+  70% { color: #4B97FF; }
+  80% { color: #4A9685; }
+  90% { color: #64C188; }
+  100% { color: #FFA644; }
+
+
+
 }
 
 /* WORDS */
@@ -285,6 +318,11 @@ input[type="radio"] {
 
 @media (max-width: 768px) {
 
+	body {
+		font-size: 18px;
+	}
+
+
 	[_col] {
 		width: calc(100% - 50px);
 		margin: 0 25px;
@@ -308,9 +346,6 @@ input[type="radio"] {
 
 @media (max-width: 518px) {
 	
-	body {
-		font-size: 16px;
-	}
 
 	h1 {
 		font-size: 2.5em;
