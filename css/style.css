@@ -164,19 +164,18 @@ a:link, a:visited {
 [_img] {
 	max-width: 100%;
 	margin: 0 auto;
-	vertical-align: top;
-	float: left;
 }
 
 [_img~="preview"] {
 	width: calc(33% - 10px);
 	margin: 0 5px 10px; 
+	float: left;
+	vertical-align: top;
 
 }
 
 [_img~="full"] {
-	/*width: 100%;*/
-	/*margin: 0 auto;*/
+	/*margin: 5% 0;*/
 
 }
 
@@ -211,8 +210,8 @@ a:link, a:visited {
 
 .lightbox img {
   max-width: 90%;
-  max-height: 80%;
-  margin: 5% 25%;
+  max-height: 90%;
+  margin-top: 3%;
 }
 
 .lightbox:target {
