@@ -9,3 +9,4 @@
 * better resume layout
 * add titles and descriptions to work
 * add music page
+* save images for web
