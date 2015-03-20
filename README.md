@@ -10,3 +10,4 @@
 * add titles and descriptions to work
 * add music page
 * save images for web
+* improve responsive design
