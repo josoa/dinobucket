@@ -57,6 +57,11 @@ body {
 	width: 288px;
 }
 
+nav > ul > li {
+	float: left;
+	margin: 0 25px;
+}
+
 
 /* TYPOGRAPHY */
 
@@ -81,10 +86,6 @@ h1 em {
 	text-transform: uppercase;
 }
 
-nav > ul > li {
-	float: left;
-	margin: 0 25px;
-}
 
 .current-page {
 	font-weight: 700;
